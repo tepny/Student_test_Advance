@@ -1,161 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Practice Webpage</title>
-    <link rel="icon" type="image/x-icon" href="image/logo.png">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="topnavbar">
-        <h1>Student Practice Webpage</h1>
-        <p>HTML + CSS Practice (Forms + Table Advanced)</p>
+      <h1>Student Practice Webpage</h1>
+      <p>HTML + CSS Practice (Forms + Table Advanced)</p>
     </header>
 
     <main class="main-container">
+      <section class="card">
+        <h2 class="section-title">Image Section</h2>
+        <div class="image-container">
+          <img
+            src="image/Angkoe Wat Temple.jpg"
+            alt="Forest view"
+            class="img-responsive img-rect"
+          />
+        </div>
+      </section>
 
-        <section class="card">
-            <h2 class="section-title">Image Section</h2>
-            <div class="image-container">
-                <img src="image/Angkoe Wat Temple.jpg" alt="Forest view" class="img-responsive img-rect">
+      <section class="card">
+        <h2 class="section-title">Image Circle</h2>
+        <div class="image-container">
+          <img
+            src="image/Sunrise.jpg"
+            alt="Forest view"
+            class="img-responsive img-circle"
+          />
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Image Oval</h2>
+        <div class="image-container">
+          <img
+            src="image/viewofmountain.jpg"
+            alt="Forest view"
+            class="img-responsive img-oval"
+          />
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Advanced Table</h2>
+        <div class="table-wrapper">
+          <table class="table-advanced">
+            <thead>
+              <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+                <th rowspan="2">Grade</th>
+              </tr>
+              <tr>
+                <th>Math</th>
+                <th>CS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alice</td>
+                <td>90</td>
+                <td>95</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Bob</td>
+                <td>80</td>
+                <td>85</td>
+                <td>B</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="form-title">Form 1: Basic Info</h2>
+        <form class="practice-form">
+          <div class="form-group">
+            <label for="name" class="label-required">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="label-required">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="label-required">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="file">Upload File</label>
+            <input type="file" id="file" class="file-input" />
+          </div>
+
+          <div class="btn-group">
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="reset" class="btn btn-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2 class="form-title">Form 2: Survey Form</h2>
+        <form class="practice-form">
+          <div class="form-group">
+            <label for="course" class="label-required">Choose Course</label>
+            <select id="course" required>
+              <option value="">-- Select --</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="group-label">Gender</label>
+            <div class="selection-row">
+              <label class="inline-label">
+                <input type="radio" id="male" name="gender" value="male" /> Male
+              </label>
+              <label class="inline-label">
+                <input type="radio" id="female" name="gender" value="female" />
+                Female
+              </label>
             </div>
-        </section>
+          </div>
 
-        <section class="card">
-            <h2 class="section-title">Image Circle</h2>
-            <div class="image-container">
-                <img src="image/Sunrise.jpg" alt="Forest view" class="img-responsive img-circle">
+          <div class="form-group">
+            <label class="group-label">Skills</label>
+            <div class="selection-row">
+              <label class="inline-label">
+                <input type="checkbox" id="html" name="skills" value="html" />
+                HTML
+              </label>
+              <label class="inline-label">
+                <input type="checkbox" id="css" name="skills" value="css" /> CSS
+              </label>
+              <label class="inline-label">
+                <input type="checkbox" id="js" name="skills" value="js" /> JS
+              </label>
             </div>
-        </section>
+          </div>
 
-        <section class="card">
-            <h2 class="section-title">Image Oval</h2>
-            <div class="image-container">
-                <img src="image/viewofmountain.jpg" alt="Forest view" class="img-responsive img-oval">
-            </div>
-        </section>
+          <div class="form-group">
+            <label for="phone" class="label-required">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter phone number"
+              required
+            />
+          </div>
 
-        <section class="card">
-            <h2 class="section-title">Advanced Table</h2>
-            <div class="table-wrapper">
-                <table class="table-advanced">
-                    <thead>
-                        <tr>
-                            <th rowspan="2">Name</th>
-                            <th colspan="2">Scores</th>
-                            <th rowspan="2">Grade</th>
-                        </tr>
-                        <tr>
-                            <th>Math</th>
-                            <th>CS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Alice</td>
-                            <td>90</td>
-                            <td>95</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>Bob</td>
-                            <td>80</td>
-                            <td>85</td>
-                            <td>B</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+          <div class="form-group">
+            <label for="message">Messagee</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Write your message here for feedback..."
+            ></textarea>
+          </div>
 
-        <section class="card">
-            <h2 class="form-title">Form 1: Basic Info</h2>
-            <form class="practice-form">
-                <div class="form-group">
-                    <label for="name" class="label-required">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email" class="label-required">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="password" class="label-required">Password</label>
-                    <input type="password" id="password" placeholder="Enter password" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="file">Upload File</label>
-                    <input type="file" id="file" class="file-input">
-                </div>
-
-                <div class="btn-group">
-                    <button type="submit" class="btn btn-submit">Submit</button>
-                    <button type="reset" class="btn btn-reset">Reset</button>
-                </div>
-            </form>
-        </section>
-
-        <section class="card">
-            <h2 class="form-title">Form 2: Survey Form</h2>
-            <form class="practice-form">
-                <div class="form-group">
-                    <label for="course" class="label-required">Choose Course</label>
-                    <select id="course" required>
-                        <option value="">-- Select --</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="js">JavaScript</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="group-label">Gender</label>
-                    <div class="selection-row">
-                        <label class="inline-label">
-                            <input type="radio" id="male" name="gender" value="male"> Male
-                        </label>
-                        <label class="inline-label">
-                            <input type="radio" id="female" name="gender" value="female"> Female
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="group-label">Skills</label>
-                    <div class="selection-row">
-                        <label class="inline-label">
-                            <input type="checkbox" id="html" name="skills" value="html"> HTML
-                        </label>
-                        <label class="inline-label">
-                            <input type="checkbox" id="css" name="skills" value="css"> CSS
-                        </label>
-                        <label class="inline-label">
-                            <input type="checkbox" id="js" name="skills" value="js"> JS
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone" class="label-required">Phone</label>
-                    <input type="tel" id="phone" placeholder="Enter phone number" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
-                </div>
-
-                <div class="btn-group">
-                    <button type="submit" class="btn btn-submit">Send</button>
-                </div>
-            </form>
-        </section>
-
+          <div class="btn-group">
+            <button type="submit" class="btn btn-submit">Send</button>
+          </div>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>
