@@ -1,0 +1,235 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5e5e6;
+    color: #333333;
+    padding-bottom: 50px;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Navigation */
+.topnavbar {
+    background-color: #4a90e2;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.topnavbar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.topnavbar p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+
+/* 3. Box Containers (Cards) */
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e1e8ed;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+
+   /* 4. Image Transformation Handling */
+   
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-responsive {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.img-rect {
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img-oval {
+    width: 300px;
+    height: 170px;
+    border-radius: 50% / 50%;
+}
+
+   /* 5. Advanced Table Elements */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table-advanced {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-advanced th, 
+.table-advanced td {
+    border: 1px solid #e1e8ed;
+    padding: 12px;
+    font-size: 0.95rem;
+}
+
+.table-advanced thead th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: 600;
+}
+
+.table-advanced tbody tr:nth-child(even) {
+    background-color: #f9fbfd;
+}
+
+   /* 6. Custom Layout Forms  */
+  
+.form-title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222222;
+}
+
+.practice-form {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.group-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.label-required::after {
+    content: " *";
+    color: #d9534f;
+}
+
+/* Form Elements Input Resets */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4a90e2;
+}
+
+.file-input {
+    padding: 6px 0;
+}
+
+/* Inline Elements Container alignment */
+.selection-row {
+    display: flex;
+    gap: 20px;
+    padding-top: 4px;
+}
+
+.inline-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.inline-label input {
+    cursor: pointer;
+}
+
+
+   /* 7. Buttons Controls */
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #357abd;
+}
+
+.btn-reset {
+    background-color: #d74444;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #685b5a;
+}
